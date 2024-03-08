@@ -14,12 +14,18 @@ Due to the use of simple CSS codes, different browsers have no problem to displa
 <link rel="stylesheet" href="/path/to/style.css" />
 ```
 
-- Put this HTML codes in the place you want:
+- If you want to use as a page loading, put this `HTML` codes at the end of `<body>` tag in the page want:
 
 ```html
 <div id="tc_loading">
   <div class="tc_loading"></div>
 </div>
+```
+
+- But if you want to use as inline loading, put this `HTML` codes in the place you want:
+
+```html
+<div class="tc_loading"></div>
 ```
 
 ## Settings:
