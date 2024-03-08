@@ -1,0 +1,33 @@
+:root {
+  --tc-loading-size: 50px;
+  --tc-loading-color: gray;
+  --tc-loading-thickness: 5px;
+  --tc-loading-speed: 1s;
+}
+#tc_loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tc_loading {
+  width: var(--tc-loading-size);
+  height: var(--tc-loading-size);
+  border-radius: 50%;
+  border: var(--tc-loading-thickness) solid white;
+  border-bottom-color: var(--tc-loading-color);
+  border-top-color: var(--tc-loading-color);
+  animation: rotation var(--tc-loading-speed) ease-in-out infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
